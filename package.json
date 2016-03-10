@@ -1,0 +1,34 @@
+{
+  "name": "generator-lean-angular",
+  "version": "0.0.1",
+  "description": "A generator to create lean angular projects.",
+  "homepage": "https://github.com/lean-stack/generator-lean-angular",
+  "author": {
+    "name": "Micha Alt",
+    "email": "mail@lean-stack.de",
+    "url": "https://lean-stack.de"
+  },
+  "scripts": {
+      "test": "mocha"
+  },
+  "files": [
+    "generators"
+  ],
+  "keywords": [
+    "yeoman-generator",
+    "angular"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^0.22.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lean-stack/generator-lean-angular.git"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "yeoman-assert": "^2.1.1",
+    "yeoman-test": "^1.1.0"
+  }
+}
