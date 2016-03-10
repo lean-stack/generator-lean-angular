@@ -3,7 +3,7 @@
     
     var app = angular.module('lean',[]);
     
-    app.configure(function () {
+    app.config(function () {
         console.log('--> Configuring lean angular app ...');
     });
     
