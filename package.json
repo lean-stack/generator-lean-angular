@@ -1,6 +1,6 @@
 {
   "name": "generator-lean-angular",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A generator to create lean angular projects.",
   "homepage": "https://github.com/lean-stack/generator-lean-angular",
   "author": {
@@ -18,14 +18,14 @@
     "yeoman-generator",
     "angular"
   ],
-  "dependencies": {
-    "yeoman-generator": "^0.22.5"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lean-stack/generator-lean-angular.git"
   },
   "license": "ISC",
+  "dependencies": {
+    "yeoman-generator": "^0.22.5"
+  },
   "devDependencies": {
     "mocha": "^2.4.5",
     "yeoman-assert": "^2.1.1",

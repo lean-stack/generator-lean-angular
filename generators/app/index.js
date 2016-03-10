@@ -15,17 +15,56 @@ module.exports = generators.Base.extend({
   configuring: {},
 
   writing: {
-      html: function () {
+    bowerJson: function() {
+      var bowerJson = {
+        name: 'lean-ng',
+        private: true,
+        dependencies: {}
+      };
+      var bowerRc = {
+        directory: 'bower_components'
+      };
+      this.fs.writeJSON('bower.json', bowerJson);
+      this.fs.writeJSON('.bowerrc', bowerRc);
+    },
+    packageJson: function () {
+      this.fs.copy(
+        this.templatePath('_package.json'),
+        this.destinationPath('package.json')
+      );
+    },
+    gulpfile: function () {
+      this.fs.copy(
+        this.templatePath('gulpfile.js'),
+        this.destinationPath('gulpfile.js')
+      );
+    },
+    html: function () {
       this.fs.copyTpl(
-        this.templatePath('index.html'),
-        this.destinationPath('app/index.html')
+        this.templatePath('src/index.html'),
+        this.destinationPath('src/index.html')
+      );
+    },
+    scripts: function () {
+      this.fs.copy(
+        this.templatePath('src/scripts/**/*'),
+        this.destinationPath('src/scripts')
+      )
+    },
+    projectAssets: function () {
+      this.fs.copy(
+        [this.templatePath('LICENSE'), this.templatePath('README.md')],
+        this.destinationPath()
       );
     }
   },
 
   conflict: {},
 
-  install: {},
+  install: function () {
+    this.bowerInstall(['angular'], { 'save': true });
+    this.npmInstall();
+  },
 
   end: {}
 });

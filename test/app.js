@@ -12,7 +12,14 @@ describe('generator-lean-angular:app', function () {
 
   it('creates files', function () {
     assert.file([
-      'app/index.html'
+      'bower.json',
+      '.bowerrc',
+      'package.json',
+      'gulpfile.js',
+      'README.md',
+      'LICENSE',
+      'src/index.html',
+      'src/scripts/app.module.js'
     ]);
   });
 });
