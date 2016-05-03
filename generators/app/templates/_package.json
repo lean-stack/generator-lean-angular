@@ -9,6 +9,8 @@
     "gulp-angular-filesort": "^1.1.1",
     "gulp-inject": "^4.0.0",
     "gulp-load-plugins": "^1.2.0",
+    "gulp-sequence": "^0.4.5",
+    "gulp-watch": "^4.3.5",
     "wiredep": "^4.0.0"
   }
 }

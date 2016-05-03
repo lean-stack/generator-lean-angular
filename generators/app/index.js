@@ -45,6 +45,12 @@ module.exports = generators.Base.extend({
         this.destinationPath('src/index.html')
       );
     },
+    styles: function () {
+      this.fs.copy(
+        this.templatePath('src/styles/**/*'),
+        this.destinationPath('src/styles')
+      )
+    },
     scripts: function () {
       this.fs.copy(
         this.templatePath('src/scripts/**/*'),

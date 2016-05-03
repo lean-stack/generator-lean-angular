@@ -19,7 +19,8 @@ describe('generator-lean-angular:app', function () {
       'README.md',
       'LICENSE',
       'src/index.html',
-      'src/scripts/app.module.js'
+      'src/scripts/app.module.js',
+      'src/styles/app.css'
     ]);
   });
 });
