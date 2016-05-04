@@ -1,7 +1,7 @@
 (function (){
     'use strict';
 
-    var app = angular.module('lean',[]);
+    var app = angular.module('leanApp',[]);
 
     app.config(function () {
         console.log('--> Configuring lean angular app ...');
