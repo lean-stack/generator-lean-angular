@@ -1,6 +1,6 @@
 {
   "name": "generator-lean-angular",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A generator to create lean angular projects.",
   "homepage": "https://github.com/lean-stack/generator-lean-angular",
   "author": {
